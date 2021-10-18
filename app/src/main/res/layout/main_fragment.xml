@@ -24,11 +24,10 @@
         android:backgroundTint="@android:color/transparent"
         android:contentDescription="@string/change_cities_list"
         android:src="@drawable/ic_russia"
-        android:tint="@null"
-        android:tintMode="screen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:maxImageSize="@dimen/fab_size" />
+        app:maxImageSize="@dimen/fab_size"
+        app:tint="@null" />
 
     <FrameLayout
         android:id="@+id/mainFragmentLoadingLayout"
