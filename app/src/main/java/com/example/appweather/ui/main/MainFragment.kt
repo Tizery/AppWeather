@@ -8,10 +8,10 @@ import androidx.fragment.app.Fragment
 import com.example.appweather.AppState
 import com.example.appweather.R
 import com.example.appweather.databinding.MainFragmentBinding
+import com.example.appweather.showSnackBar
 import com.example.appweather.model.entities.Weather
 import com.example.appweather.ui.adapters.MainFragmentAdapter
 import com.example.appweather.ui.main.details.DetailsFragment
-import com.google.android.material.snackbar.Snackbar
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainFragment : Fragment() {
@@ -86,14 +86,12 @@ class MainFragment : Fragment() {
             }
             is AppState.Error -> {
                 mainFragmentLoadingLayout.visibility = View.GONE
-                Snackbar
-                    .make(
-                        binding.mainFragmentFAB,
-                        getString(R.string.error),
-                        Snackbar.LENGTH_INDEFINITE
-                    )
-                    .setAction(getString(R.string.reload)) { viewModel.getWeatherFromLocalSourceRus() }
-                    .show()
+                mainFragmentFAB.showSnackBar(
+                    getString(R.string.error),
+                    getString(R.string.reload)
+                ) {
+                    viewModel.getWeatherFromLocalSourceRus()
+                }
             }
         }
     }
