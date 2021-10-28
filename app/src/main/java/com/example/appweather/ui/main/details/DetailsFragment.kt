@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import coil.load
+import coil.transform.GrayscaleTransformation
 import com.example.appweather.AppState
 import com.example.appweather.R
 import com.example.appweather.databinding.DetailsFragmentBinding
@@ -58,6 +60,7 @@ class DetailsFragment : Fragment() {
                 viewModel.loadData(it.city.lat, it.city.lon)
             }
         }
+        binding.imageView.load("https://freepngimg.com/thumb/city/36501-4-city-file.png")
     }
 
     override fun onDestroyView() {
