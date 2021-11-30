@@ -19,6 +19,9 @@ interface HistoryDao {
     @Delete
     fun delete(entity: HistoryEntity)
 
+    @Query("DELETE FROM HistoryEntity WHERE id = :id")
+    fun deleteById(id: Long)
+
     @Query("DELETE FROM HistoryEntity WHERE city = :cityName")
     fun deleteByCityName(cityName: String)
 }
