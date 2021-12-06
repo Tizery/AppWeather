@@ -16,6 +16,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mainFragmentFABLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/geolocation"
+        android:src="@drawable/ic_my_location"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/mainFragmentFAB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="@dimen/fab_size"
+        app:tint="@null" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/mainFragmentFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,8 +48,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
-        tools:layout_editor_absoluteX="-124dp"
-        tools:layout_editor_absoluteY="-324dp"
+        tools:layout_editor_absoluteX="-192dp"
+        tools:layout_editor_absoluteY="-255dp"
         tools:visibility="visible">
 
         <ProgressBar
