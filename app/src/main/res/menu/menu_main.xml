@@ -14,4 +14,10 @@
         android:title="@string/content_provider"
         app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/menu_maps"
+        android:icon="@drawable/ic_map"
+        android:title="@string/map"
+        app:showAsAction="ifRoom" />
+
 </menu>
