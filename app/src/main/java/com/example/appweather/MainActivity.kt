@@ -10,6 +10,7 @@ import com.example.appweather.ui.history.HistoryFragment
 import com.example.appweather.ui.main.MainFragment
 import com.example.appweather.ui.maps.MapsFragment
 
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
