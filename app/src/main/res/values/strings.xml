@@ -1,5 +1,5 @@
 <resources>
-    <string translatable="false" name="google_maps_key">AIzaSyAhh_YP7bp3AJZbD-_xX1SsTcjpAum6GJg</string>
+    <string name="google_maps_key" translatable="false">AIzaSyAhh_YP7bp3AJZbD-_xX1SsTcjpAum6GJg</string>
     <string name="app_name">AppWeather</string>
     <string name="temperature_label">Температура</string>
     <string name="feels_like_label">Ощущается как</string>
